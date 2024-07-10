@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* <!-- ======= Global =======  --> */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #eff2f7;
+    padding: 50px 0 0 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 35px;
+    color: #232323;
+}
+
+span {
+    color: #0c5adb;
+}
+
+.bg-gradient {
+    background: linear-gradient(93deg, rgba(20, 51, 193, 1) 66%, rgba(34, 109, 245, 1) 100%);
+}
+
+div[class="title"] {
+    width: 450px;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+}
+
+.title p {
+    color: #0c5adb;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+/* ======= Portfolio Section ======= */
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*=== Navbar  === */
+
+.navbar {
+    z-index: 99;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    list-style-type: none;
+    background-color: #f2f4ff;
+    border-radius: 5px;
+    line-height: 50px;
+    margin: 50px 0;
+    transition: transform 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #6a7580;
+    font-size: 20px;
+    transition: color 0.4s ease-in-out;
+    letter-spacing: 1.3px;
+}
+
+.navbar .navbar-nav .nav-item.active a {
+    color: #ffffff !important;
+}
+
+
+.navbar .bg-hover a {
+    z-index: 9999;
+}
+
+/* === hover === */
+
+.navbar ul li.hover:hover {
+    background: linear-gradient(93deg, rgba(20, 51, 193, 1) 66%, rgba(34, 109, 245, 1) 100%);
+}
+
+.navbar ul li.hover:hover .nav-link {
+    color: #ffffff;
+}
+
+/* === 3cards of portfolio === */
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col-4 {
+    position: relative;
+    width: 32%;
+    height: 440px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.row .col-4 img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.row .col-4:hover img {
+    transform: scale(1.1);
+}
+
+
+.row .col-4 .bg-hover {
+    position: absolute;
+    width: 340px;
+    background-color: #0015ffd2;
+    bottom: 20px;
+    border-radius: 5px;
+    left: 22px;
+    line-height: 30px;
+    text-align: center;
+    padding: 30px 0;
+    opacity: 0;
+    z-index: 3;
+    transition: 0.6s;
+}
+
+.row .col-4 .bg-hover i {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #0c5adb;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.row .col-4 .bg-hover p {
+    color: #ffffff;
+    letter-spacing: 0.3px;
+
+}
+
+.row .col-4:hover .bg-hover {
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.light {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.big {
+    font-size: 20px;
+}
+
+/* ======= Team Member Section ======= */
+
+.team-member {
+    width: 100%;
+    background: #ffffff;
+    margin: 80px 0 0 0;
+    padding: 60px 0;
+}
+
+.team-member .card {
+    border: 2px solid #f3f3f3;
+    margin: 30px 0;
+    border-radius: 45px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-member .card .image:hover .bg-hover {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.team-member .card .bg-hover {
+    width: 184px;
+    padding: 8px 0;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -20%;
+    left: 18px;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.team-member .card .bg-hover i {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(270deg, rgba(20, 51, 193, 1) 66%, rgba(34, 109, 245, 1) 100%);
+}
+
+.team-member .card .image {
+    position: relative;
+    width: 220px;
+    height: 295px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.team-member .card .image img {
+    position: relative;
+    width: 100%;
+}
